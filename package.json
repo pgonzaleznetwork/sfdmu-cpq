@@ -1,0 +1,12 @@
+{
+  "name": "cpq-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "data-load": "sudo sfdx sfdmu:run --sourceusername cpqwebinar1 --targetusername cpqwebinar3",
+    "delete-data":"sf apex run --target-org cpqwebinar3 --file script.apex"
+  },
+  "author": "",
+  "license": "ISC"
+}

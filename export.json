@@ -1,0 +1,20 @@
+{
+    "objects": [
+        {
+            "query": "SELECT Name,Family,ProductCode FROM Product2",
+            "operation": "Upsert",
+            "externalId": "ProductCode"
+        },
+        {
+            "query":"SELECT Name,SBQQ__ConfiguredSKU__c FROM SBQQ__ProductFeature__c",
+            "operation":"Upsert",
+            "externalId":"Name;SBQQ__ConfiguredSKU__c"
+        },
+        {
+            "query":"SELECT Name,SBQQ__ConfiguredSKU__c,SBQQ__OptionalSKU__c,SBQQ__Feature__c FROM SBQQ__ProductOption__c",
+            "operation":"Upsert",
+            "externalId":"Name;SBQQ__ConfiguredSKU__c;SBQQ__OptionalSKU__c;SBQQ__Feature__c"
+        }
+    ],
+    "createTargetCSVFiles" : false 
+}

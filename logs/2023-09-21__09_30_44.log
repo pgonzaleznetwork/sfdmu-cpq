@@ -1,0 +1,133 @@
+
+ [09:30:44.741] Execution of the command sfdmu:run has been started.
+
+ LOADING AND VALIDATING THE EXPORT.JSON SCRIPT ...
+
+ OBJECT SET #1 STARTED
+
+ {
+   "Running Plugin version": "4.30.0"
+}
+ {
+   "Running Add-On API version": "1.5.0"
+}
+
+ [09:30:44.750] Loading Core Add-On Module declarations ...
+ [09:30:44.793] Connecting to the CPQ2 using SFDX force:org:display ...
+ [09:30:47.427] Successfully connected to the CPQ2.
+ {
+   "Source": "CPQ2.",
+   "Target": "csvfile.",
+   "Package script": "/Users/pgonzalez/Documents/apps/cpq-data/export.json."
+}
+
+ GETTING AND ANALYSING OBJECT METADATA ...
+ [09:30:48.30] Processing the object Product2 ...
+ [09:30:48.30] Fetching metadata of the Product2 (Source) ...
+ [09:30:48.751] Processing the object SBQQ__PriceRule__c ...
+ [09:30:48.752] Fetching metadata of the SBQQ__PriceRule__c (Source) ...
+ [09:30:49.475] Fetching metadata of the Group (Source) ...
+ [09:30:49.846] Processing the object SBQQ__PriceRule__c ...
+ [09:30:49.849] Processing the object Product2 ...
+
+ PREPARING DATA MIGRATION JOB ...
+ [09:30:49.851] Building the migration strategy ...
+ {
+   "Order of objects to query": "Product2; SBQQ__PriceRule__c"
+}
+ {
+   "Order of objects to delete": "SBQQ__PriceRule__c; Product2"
+}
+ {
+   "Order of objects to update": "Product2; SBQQ__PriceRule__c"
+}
+ [09:30:49.854] Preparing of the data migration job has been completed.
+
+ ANALYSING DATA...
+ [09:30:50.150] {Product2} The original query string of this object is returning 1 records from the Source org.
+ [09:30:50.363] {SBQQ__PriceRule__c} The original query string of this object is returning 4 records from the Source org.
+
+ TRIGGERING ADD-ON EVENTS ...
+ [09:30:50.365] No Add-On modules found to run.
+
+ [09:30:50.366] Ready to process the data.
+
+ DELETING OLD DATA FROM THE TARGET ...
+ [09:30:50.367] {SBQQ__PriceRule__c} No records to delete.
+ [09:30:50.367] {Product2} No records to delete.
+ [09:30:50.367] Deleting data was skipped.
+
+ SOURCE:
+ =============
+
+ FETCHING THE DATA (STAGE 1) ...
+ [09:30:50.370] {Product2} Fetching the Source data from Org (STAGE 1: all records) ...
+ [09:30:50.370] {Product2} Query string: SELECT Id, Name  FROM  Product2 WHERE Id = '01t3H000003FayU'.
+ [09:30:50.710] {Product2} Data retrieval (Source) has been completed. Got 1 new records.
+ [09:30:50.712] {SBQQ__PriceRule__c} Fetching the Source data from Org (STAGE 1: all records) ...
+ [09:30:50.712] {SBQQ__PriceRule__c} Query string: SELECT Id, Name, $$Name$SBQQ__Product__c  FROM  SBQQ__PriceRule__c.
+ [09:30:50.918] {SBQQ__PriceRule__c} Data retrieval (Source) has been completed. Got 4 new records.
+ [09:30:50.919] Data retrieval (STAGE 1) has been completed.
+
+ FETCHING THE DATA (STAGE 2) ...
+ [09:30:50.921] PASS 1
+ =============
+ [09:30:50.921] No records
+
+ [09:30:50.921] PASS 2
+ =============
+ [09:30:50.922] No records
+
+ [09:30:50.922] PASS 3
+ =============
+ [09:30:50.923] No records
+
+ [09:30:50.923] PASS 4
+ =============
+ [09:30:50.923] No records
+
+ TARGET:
+ =============
+ [09:30:50.924] No records
+ [09:30:50.925] Data retrieval (STAGE 2) has been completed.
+
+ TRIGGERING ADD-ON EVENTS ...
+ [09:30:50.925] No Add-On modules found to run.
+
+
+ DATA RETRIEVAL SUMMARY.
+ [09:30:50.926] {Product2} The total amount of the retrieved records: 1/0.
+ [09:30:50.926] {SBQQ__PriceRule__c} The total amount of the retrieved records: 4/0.
+
+ UPDATING THE TARGET (STAGE 1) ...
+ [09:30:50.927] {Product2} Creating the file /Users/pgonzalez/Documents/apps/cpq-data/Product2.csv ...
+ [09:30:50.931] {Product2} The Target has been updated. Totally processed 1 records.
+
+ [09:30:50.931] {SBQQ__PriceRule__c} Creating the file /Users/pgonzalez/Documents/apps/cpq-data/SBQQ__PriceRule__c.csv ...
+ [09:30:50.932] {SBQQ__PriceRule__c} The Target has been updated. Totally processed 4 records.
+
+
+ [09:30:50.933] The Target (STAGE 1) has been updated. Totally processed 5 records.
+
+ UPDATING THE TARGET (STAGE 2) ...
+
+ [09:30:50.933] Nothing was updated.
+
+ TRIGGERING ADD-ON EVENTS ...
+ [09:30:50.934] No Add-On modules found to run.
+
+
+ DATA PROCESSING SUMMARY.
+ [09:30:50.934] {Product2} Totally processed 1 records.
+ [09:30:50.934] {SBQQ__PriceRule__c} Totally processed 4 records.
+
+ [09:30:50.935] Writing to /Users/pgonzalez/Documents/apps/cpq-data/MissingParentRecordsReport.csv ...
+
+
+ TRIGGERING ADD-ON EVENTS ...
+ [09:30:50.935] No Add-On modules found to run.
+
+
+ [09:30:50.936] Command succeeded.
+ [09:30:50.937] Execution of the command sfdmu:run has been completed. Exit code 0 (SUCCESS).
+ [09:30:50.937] Total time elapsed: 00h 00m 06s 196ms .
