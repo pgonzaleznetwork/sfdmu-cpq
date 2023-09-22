@@ -1,0 +1,110 @@
+
+ [11:34:31.158] Execution of the command sfdmu:run has been started.
+
+ LOADING AND VALIDATING THE EXPORT.JSON SCRIPT ...
+
+ OBJECT SET #1 STARTED
+
+ {
+   "Running Plugin version": "4.30.0"
+}
+ {
+   "Running Add-On API version": "1.5.0"
+}
+
+ [11:34:31.163] Loading Core Add-On Module declarations ...
+ [11:34:31.207] Connecting to the cpqwebinar1 using SFDX force:org:display ...
+ [11:34:33.469] Successfully connected to the cpqwebinar1.
+ [11:34:34.7] Connecting to the cpqwebinar3 using SFDX force:org:display ...
+ [11:34:36.364] Successfully connected to the cpqwebinar3.
+ {
+   "Source": "cpqwebinar1.",
+   "Target": "cpqwebinar3.",
+   "Package script": "/Users/pgonzalez/Documents/apps/cpq-data/export.json."
+}
+
+ GETTING AND ANALYSING OBJECT METADATA ...
+ [11:34:37.4] Processing the object Product2 ...
+ [11:34:37.5] Fetching metadata of the Product2 (Source) ...
+ [11:34:37.472] Fetching metadata of the Product2 (Target) ...
+ [11:34:38.118] Processing the object SBQQ__ProductFeature__c ...
+ [11:34:38.120] Fetching metadata of the SBQQ__ProductFeature__c (Source) ...
+ [11:34:38.402] Fetching metadata of the SBQQ__ProductFeature__c (Target) ...
+ [11:34:38.864] Processing the object SBQQ__ProductOption__c ...
+ [11:34:38.866] Fetching metadata of the SBQQ__ProductOption__c (Source) ...
+ [11:34:39.534] Fetching metadata of the SBQQ__ProductOption__c (Target) ...
+ [11:34:40.84] Fetching metadata of the Group (Source) ...
+ [11:34:40.363] Processing the object SBQQ__ProductOption__c ...
+ [11:34:40.366] Fetching metadata of the SBQQ__DiscountSchedule__c (Source) ...
+ [11:34:40.692] Fetching metadata of the SBQQ__DiscountSchedule__c (Target) ...
+ [11:34:41.266] The parent object SBQQ__DiscountSchedule__c for the child lookup field SBQQ__ProductOption__c.SBQQ__DiscountSchedule__c has been included into the process. The externalId is set to 'Name'.
+ [11:34:41.268] Processing the object SBQQ__ProductFeature__c ...
+ [11:34:41.269] Processing the object Product2 ...
+ [11:34:41.271] Fetching metadata of the ExternalDataSource (Source) ...
+ [11:34:41.497] Fetching metadata of the ExternalDataSource (Target) ...
+ [11:34:42.298] The parent object ExternalDataSource for the child lookup field Product2.ExternalDataSourceId has been included into the process. The externalId is set to 'DeveloperName'.
+ [11:34:42.301] Fetching metadata of the SBQQ__DiscountCategory__c (Source) ...
+ [11:34:42.539] Fetching metadata of the SBQQ__DiscountCategory__c (Target) ...
+ [11:34:43.215] The parent object SBQQ__DiscountCategory__c for the child lookup field Product2.SBQQ__DiscountCategory__c has been included into the process. The externalId is set to 'Name'.
+ [11:34:43.220] Fetching metadata of the SBQQ__PricingGuidance__c (Source) ...
+ [11:34:43.537] Fetching metadata of the SBQQ__PricingGuidance__c (Target) ...
+ [11:34:44.104] The parent object SBQQ__PricingGuidance__c for the child lookup field Product2.SBQQ__PricingGuidance__c has been included into the process. The externalId is set to 'Name'.
+
+ PREPARING DATA MIGRATION JOB ...
+ [11:34:44.109] Building the migration strategy ...
+ {
+   "Order of objects to query": "Product2; SBQQ__ProductFeature__c; SBQQ__ProductOption__c; SBQQ__PricingGuidance__c; SBQQ__DiscountCategory__c; ExternalDataSource; SBQQ__DiscountSchedule__c"
+}
+ {
+   "Order of objects to delete": "SBQQ__ProductOption__c; SBQQ__ProductFeature__c; Product2; SBQQ__DiscountSchedule__c; ExternalDataSource; SBQQ__DiscountCategory__c; SBQQ__PricingGuidance__c"
+}
+ {
+   "Order of objects to update": "SBQQ__PricingGuidance__c; SBQQ__DiscountCategory__c; ExternalDataSource; SBQQ__DiscountSchedule__c; Product2; SBQQ__ProductFeature__c; SBQQ__ProductOption__c"
+}
+ [11:34:44.112] Preparing of the data migration job has been completed.
+
+ ANALYSING DATA...
+ [11:34:44.284] {SBQQ__PricingGuidance__c} The original query string of this object is returning 0 records from the Source org.
+ [11:34:44.476] {SBQQ__PricingGuidance__c} The original query string of this object is returning 0 records from the Target org.
+ [11:34:44.642] {SBQQ__DiscountCategory__c} The original query string of this object is returning 0 records from the Source org.
+ [11:34:44.802] {SBQQ__DiscountCategory__c} The original query string of this object is returning 0 records from the Target org.
+ [11:34:44.958] {ExternalDataSource} The original query string of this object is returning 0 records from the Source org.
+ [11:34:45.137] {ExternalDataSource} The original query string of this object is returning 0 records from the Target org.
+ [11:34:45.314] {SBQQ__DiscountSchedule__c} The original query string of this object is returning 0 records from the Source org.
+ [11:34:45.491] {SBQQ__DiscountSchedule__c} The original query string of this object is returning 0 records from the Target org.
+ [11:34:45.654] {Product2} The original query string of this object is returning 161 records from the Source org.
+ [11:34:45.825] {Product2} The original query string of this object is returning 0 records from the Target org.
+ [11:34:45.982] {SBQQ__ProductFeature__c} The original query string of this object is returning 26 records from the Source org.
+ [11:34:46.174] {SBQQ__ProductFeature__c} The original query string of this object is returning 0 records from the Target org.
+ [11:34:46.347] {SBQQ__ProductOption__c} The original query string of this object is returning 81 records from the Source org.
+ [11:34:46.509] {SBQQ__ProductOption__c} The original query string of this object is returning 0 records from the Target org.
+
+ TRIGGERING ADD-ON EVENTS ...
+ [11:34:46.511] No Add-On modules found to run.
+
+ [11:34:46.512] Ready to process the data.
+
+ DELETING OLD DATA FROM THE TARGET ...
+ [11:34:46.512] {SBQQ__ProductOption__c} No records to delete.
+ [11:34:46.513] {SBQQ__ProductFeature__c} No records to delete.
+ [11:34:46.513] {Product2} No records to delete.
+ [11:34:46.513] {SBQQ__DiscountSchedule__c} No records to delete.
+ [11:34:46.513] {ExternalDataSource} No records to delete.
+ [11:34:46.513] {SBQQ__DiscountCategory__c} No records to delete.
+ [11:34:46.513] {SBQQ__PricingGuidance__c} No records to delete.
+ [11:34:46.514] Deleting data was skipped.
+
+ SOURCE:
+ =============
+
+ FETCHING THE DATA (STAGE 1) ...
+ [11:34:46.516] {Product2} Fetching the Source data from Org (STAGE 1: all records) ...
+ [11:34:46.516] {Product2} Query string: SELECT Id, Name, ProductCode, Description, IsActive, Family, ExternalDataSourceId, ExternalId, DisplayUrl, QuantityUnitOfMeasure, StockKeepingUnit, SBQQ__AssetAmendmentBehavior__c, SBQQ__AssetConversion__c, SBQQ__BatchQuantity__c, SBQQ__BillingFreque... FROM  Product2.
+
+ [11:34:46.751] [ERROR] Error during execution of the command: 
+SBQQ__PricingGuidance__c, Extras__c, Region__c, ExternalDataSource.DeveloperName
+                                                ^
+ERROR at Row:1:Column:2147
+Didn't understand relationship 'ExternalDataSource' in field path. If you are attempting to use a custom relationship, be sure to append the '__r' after the custom relationship name. Please reference your WSDL or the describe call for the appropriate names..
+ [11:34:46.754] [ERROR] Execution of the command sfdmu:run has been completed. Exit code 4 (COMMAND_EXECUTION_ERROR).
+ [11:34:46.754] Total time elapsed: 00h 00m 15s 594ms .

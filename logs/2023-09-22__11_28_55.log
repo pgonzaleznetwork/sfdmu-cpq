@@ -1,0 +1,183 @@
+
+ [11:28:55.26] Execution of the command sfdmu:run has been started.
+
+ LOADING AND VALIDATING THE EXPORT.JSON SCRIPT ...
+
+ OBJECT SET #1 STARTED
+
+ {
+   "Running Plugin version": "4.30.0"
+}
+ {
+   "Running Add-On API version": "1.5.0"
+}
+
+ [11:28:55.31] Loading Core Add-On Module declarations ...
+ [11:28:55.73] Connecting to the cpqwebinar1 using SFDX force:org:display ...
+ [11:28:57.995] Successfully connected to the cpqwebinar1.
+ [11:28:58.516] Connecting to the cpqwebinar3 using SFDX force:org:display ...
+ [11:29:01.107] Successfully connected to the cpqwebinar3.
+ {
+   "Source": "cpqwebinar1.",
+   "Target": "cpqwebinar3.",
+   "Package script": "/Users/pgonzalez/Documents/apps/cpq-data/export.json."
+}
+
+ GETTING AND ANALYSING OBJECT METADATA ...
+ [11:29:01.767] Processing the object Product2 ...
+ [11:29:01.768] Fetching metadata of the Product2 (Source) ...
+ [11:29:02.219] Fetching metadata of the Product2 (Target) ...
+ [11:29:02.920] Processing the object SBQQ__ProductFeature__c ...
+ [11:29:02.921] Fetching metadata of the SBQQ__ProductFeature__c (Source) ...
+ [11:29:03.197] Fetching metadata of the SBQQ__ProductFeature__c (Target) ...
+ [11:29:03.708] Processing the object SBQQ__ProductOption__c ...
+ [11:29:03.709] Fetching metadata of the SBQQ__ProductOption__c (Source) ...
+ [11:29:04.97] Fetching metadata of the SBQQ__ProductOption__c (Target) ...
+ [11:29:04.848] Fetching metadata of the Group (Source) ...
+ [11:29:05.151] Processing the object SBQQ__ProductOption__c ...
+ [11:29:05.153] Processing the object SBQQ__ProductFeature__c ...
+ [11:29:05.153] Processing the object Product2 ...
+
+ PREPARING DATA MIGRATION JOB ...
+ [11:29:05.154] Building the migration strategy ...
+ {
+   "Order of objects to query": "Product2; SBQQ__ProductFeature__c; SBQQ__ProductOption__c"
+}
+ {
+   "Order of objects to delete": "SBQQ__ProductOption__c; SBQQ__ProductFeature__c; Product2"
+}
+ {
+   "Order of objects to update": "Product2; SBQQ__ProductFeature__c; SBQQ__ProductOption__c"
+}
+ [11:29:05.156] Preparing of the data migration job has been completed.
+
+ ANALYSING DATA...
+ [11:29:05.326] {Product2} The original query string of this object is returning 161 records from the Source org.
+ [11:29:05.487] {Product2} The original query string of this object is returning 0 records from the Target org.
+ [11:29:05.695] {SBQQ__ProductFeature__c} The original query string of this object is returning 26 records from the Source org.
+ [11:29:05.884] {SBQQ__ProductFeature__c} The original query string of this object is returning 0 records from the Target org.
+ [11:29:06.37] {SBQQ__ProductOption__c} The original query string of this object is returning 81 records from the Source org.
+ [11:29:06.238] {SBQQ__ProductOption__c} The original query string of this object is returning 0 records from the Target org.
+
+ TRIGGERING ADD-ON EVENTS ...
+ [11:29:06.240] No Add-On modules found to run.
+
+ [11:29:06.240] Ready to process the data.
+
+ DELETING OLD DATA FROM THE TARGET ...
+ [11:29:06.241] {SBQQ__ProductOption__c} No records to delete.
+ [11:29:06.242] {SBQQ__ProductFeature__c} No records to delete.
+ [11:29:06.242] {Product2} No records to delete.
+ [11:29:06.242] Deleting data was skipped.
+
+ SOURCE:
+ =============
+
+ FETCHING THE DATA (STAGE 1) ...
+ [11:29:06.245] {Product2} Fetching the Source data from Org (STAGE 1: all records) ...
+ [11:29:06.246] {Product2} Query string: SELECT Id, Name, Family, ProductCode  FROM  Product2.
+ [11:29:06.499] {Product2} Data retrieval (Source) has been completed. Got 161 new records.
+ [11:29:06.500] {SBQQ__ProductFeature__c} Fetching the Source data from Org (STAGE 1: all records) ...
+ [11:29:06.500] {SBQQ__ProductFeature__c} Query string: SELECT Id, Name, SBQQ__ConfiguredSKU__c, $$Name$SBQQ__ConfiguredSKU__c, SBQQ__ConfiguredSKU__r.ProductCode  FROM  SBQQ__ProductFeature__c.
+ [11:29:06.687] {SBQQ__ProductFeature__c} Data retrieval (Source) has been completed. Got 26 new records.
+ [11:29:06.688] {SBQQ__ProductOption__c} Fetching the Source data from Org (STAGE 1: all records) ...
+ [11:29:06.688] {SBQQ__ProductOption__c} Query string: SELECT Id, Name, SBQQ__ConfiguredSKU__c, SBQQ__OptionalSKU__c, SBQQ__Feature__c, $$Name$SBQQ__ConfiguredSKU__c$SBQQ__OptionalSKU__c$SBQQ__Feature__c, SBQQ__ConfiguredSKU__r.ProductCode, SBQQ__OptionalSKU__r.ProductCode, SBQQ__Feature__r.$$Name$SBQQ__... FROM  SBQQ__ProductOption__c.
+ [11:29:06.965] {SBQQ__ProductOption__c} Data retrieval (Source) has been completed. Got 81 new records.
+ [11:29:06.965] Data retrieval (STAGE 1) has been completed.
+
+ FETCHING THE DATA (STAGE 2) ...
+ [11:29:06.966] PASS 1
+ =============
+ [11:29:06.967] No records
+
+ [11:29:06.967] PASS 2
+ =============
+ [11:29:06.967] No records
+
+ [11:29:06.967] PASS 3
+ =============
+ [11:29:06.968] No records
+
+ [11:29:06.968] PASS 4
+ =============
+ [11:29:06.968] No records
+
+ TARGET:
+ =============
+ [11:29:06.969] {Product2} Fetching the Target data from Org (STAGE 2: all records) ...
+ [11:29:06.969] {Product2} Query string: SELECT Id, Name, Family, ProductCode  FROM  Product2.
+ [11:29:07.155] {Product2} Data retrieval (Target) has been completed. Got 0 new records.
+ [11:29:07.156] {SBQQ__ProductFeature__c} Fetching the Target data from Org (STAGE 2: all records) ...
+ [11:29:07.156] {SBQQ__ProductFeature__c} Query string: SELECT Id, Name, SBQQ__ConfiguredSKU__c, $$Name$SBQQ__ConfiguredSKU__c, SBQQ__ConfiguredSKU__r.ProductCode  FROM  SBQQ__ProductFeature__c.
+ [11:29:07.323] {SBQQ__ProductFeature__c} Data retrieval (Target) has been completed. Got 0 new records.
+ [11:29:07.324] {SBQQ__ProductOption__c} Fetching the Target data from Org (STAGE 2: all records) ...
+ [11:29:07.324] {SBQQ__ProductOption__c} Query string: SELECT Id, Name, SBQQ__ConfiguredSKU__c, SBQQ__OptionalSKU__c, SBQQ__Feature__c, $$Name$SBQQ__ConfiguredSKU__c$SBQQ__OptionalSKU__c$SBQQ__Feature__c, SBQQ__ConfiguredSKU__r.ProductCode, SBQQ__OptionalSKU__r.ProductCode, SBQQ__Feature__r.$$Name$SBQQ__... FROM  SBQQ__ProductOption__c.
+ [11:29:07.535] {SBQQ__ProductOption__c} Data retrieval (Target) has been completed. Got 0 new records.
+ [11:29:07.536] Data retrieval (STAGE 2) has been completed.
+
+ TRIGGERING ADD-ON EVENTS ...
+ [11:29:07.537] No Add-On modules found to run.
+
+
+ DATA RETRIEVAL SUMMARY.
+ [11:29:07.538] {Product2} The total amount of the retrieved records: 161/0.
+ [11:29:07.538] {SBQQ__ProductFeature__c} The total amount of the retrieved records: 26/0.
+ [11:29:07.539] {SBQQ__ProductOption__c} The total amount of the retrieved records: 81/0.
+
+ UPDATING THE TARGET (STAGE 1) ...
+ [11:29:07.542] {Product2} Amount of records to Insert: 161.
+ [11:29:07.544] {Product2} The Insert API operation has been started using REST API.
+ [11:29:07.544] [Job# REST:Insert] {Product2} The job has been created. Uploading data ...
+ [11:29:09.123] {Product2} The Insert API operation has been completed.
+ [11:29:09.129] {Product2} The Target has been updated. Totally processed 161 records.
+
+ [11:29:09.131] {SBQQ__ProductFeature__c} Amount of records to Insert: 26.
+ [11:29:09.132] {SBQQ__ProductFeature__c} The Insert API operation has been started using REST API.
+ [11:29:09.132] [Job# REST:Insert] {SBQQ__ProductFeature__c} The job has been created. Uploading data ...
+ [11:29:09.356] [WARN] [Batch# REST:Insert] {SBQQ__ProductFeature__c} Completed with issues. 26 records processed, 26 records failed.
+ [11:29:09.359] {SBQQ__ProductFeature__c} The Insert API operation has been completed.
+ [11:29:09.361] {SBQQ__ProductFeature__c} The Target has been updated. Totally processed 26 records.
+
+ [11:29:09.363] [WARN] {SBQQ__ProductOption__c} 67 missing parent lookup records were found. See MissingParentRecordsReport.csv file for the details.
+
+ [11:29:11.532] {SBQQ__ProductOption__c} Amount of records to Insert: 81.
+ [11:29:11.533] {SBQQ__ProductOption__c} The Insert API operation has been started using REST API.
+ [11:29:11.533] [Job# REST:Insert] {SBQQ__ProductOption__c} The job has been created. Uploading data ...
+ [11:29:11.897] [WARN] [Batch# REST:Insert] {SBQQ__ProductOption__c} Completed with issues. 81 records processed, 81 records failed.
+ [11:29:11.899] {SBQQ__ProductOption__c} The Insert API operation has been completed.
+ [11:29:11.902] {SBQQ__ProductOption__c} The Target has been updated. Totally processed 81 records.
+
+
+ [11:29:11.902] The Target (STAGE 1) has been updated. Totally processed 268 records.
+
+ UPDATING THE TARGET (STAGE 2) ...
+
+ [11:29:11.903] PASS 1
+ =============
+ [11:29:11.906] [WARN] {SBQQ__ProductOption__c} 67 missing parent lookup records were found. See MissingParentRecordsReport.csv file for the details.
+
+ [11:29:11.907] PASS 2
+ =============
+ [11:29:11.909] [WARN] {SBQQ__ProductOption__c} 67 missing parent lookup records were found. See MissingParentRecordsReport.csv file for the details.
+
+ [11:29:11.909] Nothing was updated.
+
+ TRIGGERING ADD-ON EVENTS ...
+ [11:29:11.910] No Add-On modules found to run.
+
+
+ DATA PROCESSING SUMMARY.
+ [11:29:11.910] {Product2} Totally processed 161 records.
+ [11:29:11.910] {SBQQ__ProductFeature__c} Totally processed 26 records.
+ [11:29:11.910] {SBQQ__ProductOption__c} Totally processed 81 records.
+
+ [11:29:11.911] Writing to /Users/pgonzalez/Documents/apps/cpq-data/MissingParentRecordsReport.csv ...
+
+
+ TRIGGERING ADD-ON EVENTS ...
+ [11:29:11.914] No Add-On modules found to run.
+
+
+ [11:29:11.915] Command succeeded.
+ [11:29:11.915] Execution of the command sfdmu:run has been completed. Exit code 0 (SUCCESS).
+ [11:29:11.915] Total time elapsed: 00h 00m 16s 890ms .

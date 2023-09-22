@@ -1,0 +1,27 @@
+Name,SBQQ__ConfiguredSKU__c,SBQQ__Category__c,SBQQ__ConfigurationFieldSet__c,SBQQ__DiscountSchedule__c,SBQQ__DynamicProductFilterFieldSet__c,SBQQ__DynamicProductLookupFieldSet__c,SBQQ__MaxOptionCount__c,SBQQ__MinOptionCount__c,SBQQ__Number__c,SBQQ__OptionSelectionMethod__c,External_ID__c,Errors,Id
+Processor,01t2o000009ngppAAA,,,,,,1,1,10,,FE0001,,a0h2o00000NnPPsAAN
+Memory,01t2o000009ngppAAA,,,,,,1,1,20,,FE0002,,a0h2o00000NnPPtAAN
+Storage,01t2o000009ngppAAA,,,,,,1,1,30,,FE0003,,a0h2o00000NnPPuAAN
+Processor,01t2o000009ngpjAAA,,,,,,1,1,10,,FE0004,,a0h2o00000NnPPvAAN
+Memory,01t2o000009ngpjAAA,,,,,,1,1,20,,FE0005,,a0h2o00000NnPPwAAN
+Storage,01t2o000009ngpjAAA,,,,,,1,1,30,,FE0006,,a0h2o00000NnPPxAAN
+Processor,01t2o000009ngrsAAA,,,,,,1,1,10,,,,a0h2o00000NnPPyAAN
+Memory,01t2o000009ngrsAAA,,,,,,1,1,20,,,,a0h2o00000NnPPzAAN
+Storage,01t2o000009ngrsAAA,,,,,,,2,30,,,,a0h2o00000NnPQ0AAN
+Input Devices,01t2o000009ngrsAAA,,,,,,,0,40,,,,a0h2o00000NnPQ1AAN
+Output Devices,01t2o000009ngrsAAA,,,,,,,0,50,,,,a0h2o00000NnPQ2AAN
+Chargers,01t2o000009ngrDAAQ,,,,,,,0,10,,,,a0h2o00000NnPQ3AAN
+Service,01t2o000009ngrDAAQ,,,,,,,0,20,,,,a0h2o00000NnPQ4AAN
+Cables,01t2o000009ngrDAAQ,,,,,,,0,30,,,,a0h2o00000NnPQ5AAN
+Cases,01t2o000009ngrDAAQ,,,,,,,0,40,,,,a0h2o00000NnPQ6AAN
+System Peripherals,01t2o000009ngqFAAQ,,,,,,,0,10,,,,a0h2o00000NnPQ7AAN
+Headphones & Speakers,01t2o000009ngqFAAQ,,,,,,,1,20,,,,a0h2o00000NnPQ8AAN
+Microphones,01t2o000009ngqFAAQ,,,,,,,0,40,,,,a0h2o00000NnPQ9AAN
+Cameras,01t2o000009ngqFAAQ,,,,,,,1,30,,,,a0h2o00000NnPQAAA3
+Lighting,01t2o000009ngqQAAQ,,,,,,,0,10,,,,a0h2o00000NnPQBAA3
+Basics,01t2o000009ngqeAAA,,,,,,,0,10,,,,a0h2o00000NnPQCAA3
+Power,01t2o000009ngqQAAQ,,,,,,,0,20,,,,a0h2o00000NnPQDAA3
+Charging Options,01t2o000009ngqlAAA,,,,,,,0,20,,,,a0h2o00000NnPQEAA3
+Services,01t2o000009ngqQAAQ,,,,,,,0,30,,,,a0h2o00000NnPQFAA3
+Watch Bands,01t2o000009ngqlAAA,,,,,,,0,10,,,,a0h2o00000NnPQGAA3
+Storage,01t2o000009ngrlAAA,,,,,,1,1,10,,,,a0h2o00000NnPQHAA3
